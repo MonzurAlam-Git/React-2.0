@@ -1,11 +1,11 @@
 Here’s the README in a properly formatted Markdown style that you can directly paste into your GitHub repository:
 
 ```markdown
-# React.js Relearning Journey
+#React.js Relearning Journey
 
 Welcome to my React.js relearning repository! This project serves as my personal space to explore, understand, and implement concepts from the official React.js documentation. My goal is to rebuild a strong foundation in React.js by systematically studying its features and applying them in small projects or experiments.
 
-## Why This Repository?
+##Why This Repository?
 
 Having learned React.js in the past, I realized the need to revisit its core concepts, especially with the evolution of the library. By going through the official documentation and implementing hands-on projects, I aim to:
 
@@ -13,9 +13,9 @@ Having learned React.js in the past, I realized the need to revisit its core con
 - Explore newer features such as hooks, context API, and concurrent rendering.
 - Strengthen my skills in building dynamic and responsive web applications.
 
-## Learning Plan
+##Learning Plan
 
-### Week 1: Fundamentals
+###Week 1: Fundamentals
 - [ ] JSX Basics
 - [ ] Components and Props
 - [ ] State and Lifecycle
