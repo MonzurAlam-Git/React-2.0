@@ -1,6 +1,6 @@
 Here’s the README in a properly formatted Markdown style that you can directly paste into your GitHub repository:
 
-```markdown
+
 #React.js Relearning Journey
 
 Welcome to my React.js relearning repository! This project serves as my personal space to explore, understand, and implement concepts from the official React.js documentation. My goal is to rebuild a strong foundation in React.js by systematically studying its features and applying them in small projects or experiments.
