@@ -1,0 +1,5 @@
+ol {
+  list-style-type: decimal; /* Ensures ordered numbers */
+  margin-left: 20px; /* Adds indentation for nesting */
+  padding-left: 20px; /* Adds padding for spacing */
+}
