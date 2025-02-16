@@ -1,4 +1,4 @@
-import ProfilePage from "./Components/Module 3/3.18/ProfilePage";
+import ManipulateDOM_Ref from "./Components/Module 4/ManipulateDOM_Ref";
 
 function App() {
   // const [color, setColor] = useState("red");
@@ -44,7 +44,14 @@ function App() {
       {/* <ResetState /> */}
       {/* <ToDo /> */}
       {/* <Container /> */}
-      <ProfilePage />
+      {/* <ProfilePage /> */}
+      {/* MODULE 4 -- ESCAPE HATCHES */}
+      {/* <UseRef /> */}
+      {/* <StopWatch /> */}
+      {/* <StopWatch2 /> */}
+      <ManipulateDOM_Ref />
+      {/* <CatFriends /> */}
+      {/* <ImperativeHandler /> */}
     </>
   );
 }

@@ -1,5 +1,5 @@
 import Heading from "./Heading";
-import Post from "./Posts";
+import Post from "./Post";
 import Section from "./Section";
 
 export default function RecentPosts() {

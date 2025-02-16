@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { TaskDispatchContext } from "./Contexts/TasksContexts";
 
-export default function Task({ task, onEditTask, onDeleteTask }) {
+export default function Task({ task }) {
   const [isEditing, setIsEditing] = useState(false);
+
+  const dispatch = useContext(TaskDispatchContext);
+
   let taskContent;
 
   if (isEditing) {
@@ -9,7 +13,12 @@ export default function Task({ task, onEditTask, onDeleteTask }) {
       <>
         <input
           className="input-md border-2 border-black"
-          onChange={(e) => onEditTask({ ...task, text: e.target.value })}
+          onChange={(e) =>
+            dispatch({
+              type: "edited",
+              task: { ...task, text: e.target.value },
+            })
+          }
         />
         <button
           onClick={() => setIsEditing(false)}
@@ -39,10 +48,23 @@ export default function Task({ task, onEditTask, onDeleteTask }) {
         type="checkbox"
         className="m-1"
         checked={task.checked}
-        onChange={(e) => onEditTask({ ...task, done: true })}
+        onChange={(e) =>
+          dispatch({
+            type: "edited",
+            task: { ...task, done: e.target.checked },
+          })
+        }
       />
       {taskContent}
-      <button onClick={() => onDeleteTask(task.id)} className="btn btn-error">
+      <button
+        onClick={() =>
+          dispatch({
+            type: "deleted",
+            id: task.id,
+          })
+        }
+        className="btn btn-error"
+      >
         Delete
       </button>
     </label>

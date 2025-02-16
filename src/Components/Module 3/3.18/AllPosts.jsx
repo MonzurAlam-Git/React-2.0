@@ -1,7 +1,7 @@
-import Heading from "../3.18/Heading";
 import "../3.18/ProfilePage.css";
-import RecentPosts from "../3.18/RecentPosts";
-import Section from "../3.18/Section";
+import Heading from "./Heading";
+import RecentPosts from "./RecentPosts";
+import Section from "./Section";
 
 export default function AllPosts() {
   return (
